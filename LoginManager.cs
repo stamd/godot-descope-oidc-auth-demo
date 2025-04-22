@@ -91,16 +91,9 @@ private void UpdateUIBasedOnAuth()
 	string userName = "";
 	string userEmail = "";
 	
-	// Deserialize the response we got from the /userifno endpoint
-	var dict = JsonSerializer.Deserialize<Dictionary<string, object>>(userInfo);
-	if (dict.TryGetValue("name", out var name))
-	{
-		userName = name.ToString();
-	}
-	if (dict.TryGetValue("email", out var email))
-	{
-		userEmail = email.ToString();
-	}
+	var userInfoJson = System.Text.Json.JsonDocument.Parse(userInfo).RootElement;
+	userEmail = userInfoJson.GetProperty("email").GetString();
+	userName = userInfoJson.GetProperty("name").GetString();
 	
 	userInfoLabel.SetText("User logged in! \n Username - " + userName + "\nEmail: " + userEmail);
 	

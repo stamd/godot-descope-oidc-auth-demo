@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "GDP44UYDi9Il9OK1C7IgS/bzl0PXM6OBDS6hDvQmkPRu8SFfZHF8mVpYiVS+VtdGvz2wXGqKf1tmA3eWU0cxgQ==",
+  "success": true,
+  "projectFilePath": "/home/dimitrije/Desktop/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
+  "expectedPackageFiles": [
+    "/home/dimitrije/.nuget/packages/descope/0.4.2/descope.0.4.2.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/godot.sourcegenerators/4.4.1/godot.sourcegenerators.4.4.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/godotsharp/4.4.1/godotsharp.4.4.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/godotsharpeditor/4.4.1/godotsharpeditor.4.4.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/microsoft.identitymodel.abstractions/7.7.1/microsoft.identitymodel.abstractions.7.7.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.7.1/microsoft.identitymodel.jsonwebtokens.7.7.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/microsoft.identitymodel.logging/7.7.1/microsoft.identitymodel.logging.7.7.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/microsoft.identitymodel.tokens/7.7.1/microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/restsharp/112.1.0/restsharp.112.1.0.nupkg.sha512",
+    "/home/dimitrije/.nuget/packages/system.identitymodel.tokens.jwt/7.7.1/system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
