@@ -23,7 +23,7 @@ public partial class LoginManager : Control
 	private string _tokenUrl = "https://api.descope.com/oauth2/v1/token";
 	private string _logoutUrl = "https://api.descope.com/oauth2/v1/logout";
 	
-	private string _clientId = System.Environment.GetEnvironmentVariable("DESCOPE_CLIENT_ID") ?? throw new Exception("Client ID environment variable not found!");
+	private string _clientId = "your-client-id-from-descope";
 	
 	private string _redirectUri = "http://localhost:3000/callback";
 	private string _redirectLogoutUri = "http://localhost:3000/logout-callback";
