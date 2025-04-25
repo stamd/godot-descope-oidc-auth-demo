@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GDP44UYDi9Il9OK1C7IgS/bzl0PXM6OBDS6hDvQmkPRu8SFfZHF8mVpYiVS+VtdGvz2wXGqKf1tmA3eWU0cxgQ==",
+  "dgSpecHash": "6k+V5l6iTDtzFEOZjWHwdP2CiiH9jJ92jV/6EM63OQ4IRvFTRUASr1tUmtuVWNvoZrvVmDEkk/HwLUyxLEXMGA==",
   "success": true,
-  "projectFilePath": "/home/dimitrije/Desktop/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
+  "projectFilePath": "/home/dimitrije/Documents/writing-gigs/2025-04-01-draftdev-auth-mfa-to-godot-with-descope/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
   "expectedPackageFiles": [
     "/home/dimitrije/.nuget/packages/descope/0.4.2/descope.0.4.2.nupkg.sha512",
     "/home/dimitrije/.nuget/packages/godot.sourcegenerators/4.4.1/godot.sourcegenerators.4.4.1.nupkg.sha512",

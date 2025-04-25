@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GodotDescopeDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05c50646679552e374123cca40ad16d9340a4dcf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85cb1dbe09e6833ecca636edc4a86150f5351e29")]
 [assembly: System.Reflection.AssemblyProductAttribute("GodotDescopeDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GodotDescopeDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

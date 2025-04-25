@@ -397,11 +397,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dimitrije/Desktop/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
+      "projectUniqueName": "/home/dimitrije/Documents/writing-gigs/2025-04-01-draftdev-auth-mfa-to-godot-with-descope/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
       "projectName": "GodotDescopeDemo",
-      "projectPath": "/home/dimitrije/Desktop/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
+      "projectPath": "/home/dimitrije/Documents/writing-gigs/2025-04-01-draftdev-auth-mfa-to-godot-with-descope/godot-descope-oidc-auth-demo/GodotDescopeDemo.csproj",
       "packagesPath": "/home/dimitrije/.nuget/packages/",
-      "outputPath": "/home/dimitrije/Desktop/godot-descope-oidc-auth-demo/.godot/mono/temp/obj/",
+      "outputPath": "/home/dimitrije/Documents/writing-gigs/2025-04-01-draftdev-auth-mfa-to-godot-with-descope/godot-descope-oidc-auth-demo/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/dimitrije/.nuget/NuGet/NuGet.Config"
