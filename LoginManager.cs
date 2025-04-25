@@ -97,10 +97,9 @@ private void UpdateUIBasedOnAuth()
 	
 	userInfoLabel.SetText("User logged in! \n Username - " + userName + "\nEmail: " + userEmail);
 	
-	// Ovo ispod se zove kada se zavrsi login, trebalo bi kao posebna funkcija
+	// User logged in - now changing the screen
 	_isLoggedIn = true;
  	UpdateUIBasedOnAuth();
-	GD.Print(">>> User Info: " + userInfo);
   }
 
 private async Task<string> ListenForAuthCode()
@@ -124,22 +123,27 @@ private async Task<(string access_token, string id_token, string refresh_token)>
 {
 	var client = new System.Net.Http.HttpClient();
 
+	// Define a dictionary to store token data into
 	var tokenData = new Dictionary<string, string>
-{
-	{ "grant_type", "authorization_code" },
-	{ "code", code }, 
-	{ "redirect_uri", _redirectUri },  
-	{ "client_id", _clientId },
-	{ "code_verifier", _codeVerifier }
-};
+	{
+		{ "grant_type", "authorization_code" },
+		{ "code", code }, 
+		{ "redirect_uri", _redirectUri },  
+		{ "client_id", _clientId },
+		{ "code_verifier", _codeVerifier }
+	};
 
+	// Get the response from the token endpoint
 	var content = new FormUrlEncodedContent(tokenData);
-
 	var response = await client.PostAsync(_tokenUrl, content);
+
+	// Read the response as a string
 	string json = await response.Content.ReadAsStringAsync();
 
+	// Convert the response to JSON format
 	var result = System.Text.Json.JsonDocument.Parse(json).RootElement;
 
+	// The function returns a tuple containing three tokens (strings)
 	return (
 		result.GetProperty("access_token").GetString(),
 		result.GetProperty("id_token").GetString(),
