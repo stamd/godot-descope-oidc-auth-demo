@@ -164,7 +164,8 @@ private void OnLogoutPressed()
   {
 	GD.Print("Log out Button pressed!");
 	
-	 string authUrl = $"{_logoutUrl}?" +
+	// Add necessary parameters to the logout API endpoint URL
+	string authUrl = $"{_logoutUrl}?" +
 					$"id_token_hint={_id_token}" +
 					$"&post_logout_redirect_uri={HttpUtility.UrlEncode(_redirectLogoutUri)}";
 
@@ -175,19 +176,28 @@ private void OnLogoutPressed()
 
 private async void ListenForLogout()
 {
+	// Create and start an HTTP listener for the same URL that’s passed
+	// as the `post_logout_redirect_uri` parameter to Descope logout endpoin
 	var listener = new HttpListener();
 	listener.Prefixes.Add("http://localhost:3000/logout-callback/");
 	listener.Start();
 
+	// Wait for the listener to get a signal that the logout happened
 	var context = await listener.GetContextAsync();
 
+	// Send a simple logout message to show in the browser
 	byte[] responseBytes = Encoding.UTF8.GetBytes("You have been logged out.");
 	context.Response.OutputStream.Write(responseBytes, 0, responseBytes.Length);
 	context.Response.Close();
+
+	// Stop the listening
 	listener.Stop();
 
-	// Clear local tokens or update UI
+	// Update the local state of the game
+	// since the user is no longer logged in
 	_isLoggedIn = false;
+
+	// Refresh the UI
 	UpdateUIBasedOnAuth();
 }
 
